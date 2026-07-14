@@ -26,7 +26,7 @@ function Invoke-InteractiveTxtSearch {
         $arguments += @('-DriveLetter', $DriveLetter)
     }
 
-    & powershell.exe @arguments
+    & powershell.exe @arguments | Out-Host
     return $LASTEXITCODE
 }
 
